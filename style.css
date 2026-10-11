@@ -46,7 +46,12 @@ main {
     padding: 24px 0;
 }
 
-/* photo gets smaller with the page */
+/* keeps my photo from filling the whole page */
+.photo-wrapper {
+    width: 50%;
+    margin: 18px auto;
+}
+
 img {
     width: 100%;
     height: auto;
