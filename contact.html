@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <!-- helps it fit on phones too -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact | Kieron's Portfolio</title>
+    <title>Contact | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- the screen size picks the css file -->
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
     <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 601px) and (max-width: 900px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 901px)">
 </head>
+
+
 <body>
-    <!-- name and links for the other pages -->
     <header class="site-header">
         <div class="page-width">
             <p class="site-name">Kieron's Portfolio</p>
-            <nav>
+            <nav aria-label="Main navigation">
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- the form goes here -->
+
     <main class="page-width">
-        <section>
-            <h1>Get in touch</h1>
 
+        <section class="content-panel" aria-labelledby="contact-heading">
+            <h1 id="contact-heading">Contact Me</h1>
+            <p>Write me a message here! I make sure that they type a valid input.</p>
 
-            <!-- required means you have to fill these in -->
-            <form class="contact-form">
+            <!-- all the checks here -->
+            <form class="contact-form" action="#" method="get">
                 <p>
                     <label for="name">Name</label>
-                    <input id="name" name="name" required>
+                    <input id="name" name="name" type="text" required>
                 </p>
                 <p>
                     <label for="email">Email</label>
-                    <!-- this checks for an email address -->
                     <input id="email" name="email" type="email" required>
                 </p>
                 <p>
-                    <label for="phone">Cell No.</label>
-                    <!-- this checks the phone number format -->
-                    <input id="phone" name="phone" type="tel" pattern="[0-9+() .-]{7,20}" required>
+                    <label for="phone">Phone (optional)</label>
+                    <input id="phone" name="phone" type="tel" pattern="[0-9+() .-]{7,20}" title="Use 7 to 20 digits , spaces, or phone punctuation.">
                 </p>
                 <p>
-                    <label for="message">Comments</label>
+                    <label for="message">Message</label>
                     <textarea id="message" name="message" rows="6" required></textarea>
                 </p>
-                <p><button>Submit</button></p>
+                <p><button type="submit">Submit</button></p>
             </form>
         </section>
+
     </main>
 
-    <!-- my email and copyright at the bottom -->
+
     <footer class="site-footer">
         <div class="page-width">
-            <p>Email me: kieron.edwards@ontariotechu.net</p>
-            <p>© 2026 Kieron Edwards</p>
+            <p>Contact: <span class="placeholder-note">kieron.edwards@ontariotechu.net</span></p>
+            <p>© 2026 <span class="placeholder-note">Kieron Edwards</span></p>
         </div>
     </footer>
 </body>

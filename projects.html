@@ -2,61 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- helps it fit on phones too -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects | Kieron's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- the screen size picks the css file -->
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
     <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 601px) and (max-width: 900px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 901px)">
 </head>
 <body>
-    <!-- name and links for the other pages -->
     <header class="site-header">
         <div class="page-width">
             <p class="site-name">Kieron's Portfolio</p>
-            <nav>
+            <nav aria-label="Main navigation">
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html" aria-current="page">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- one article for each project -->
     <main class="page-width">
-        <section>
-            <h1>Projects</h1>
+        <section class="content-panel" aria-labelledby="projects-heading">
+            <h1 id="projects-heading">Projects</h1>
+            <p>Here are a few projects I've worked on.</p>
 
-
-            <article>
+            <article class="project-card">
                 <h2>Cybersecurity Simulation</h2>
-                <p>I worked with three others to defend a simulated organization from cyberattacks. We used limited credits for security upgrades, vulnerability fixes, and phishing prevention.</p>
+                <p>I worked with three others to defend a simulated hospital organization while only using limited 44 credits for security upgrades and fixes.</p>
             </article>
-            <article>
+            <article class="project-card">
                 <h2>Website Cloning with Kali Linux</h2>
-                <p>I used Kali Linux in a cybersecurity lab to copy the Ontario Tech website and host it locally. Then I changed its content to demonstrate phishing techniques.</p>
+                <p>I used Kali Linux in a lab to copy the Ontario Tech website, host it locally, and change its content to show phishing techniques.</p>
             </article>
-            <article>
+            <div class="clear"></div>
+            <article class="project-card">
                 <h2>Personal Portfolio Website</h2>
-                <p>I made this portfolio using HTML5 and CSS3. It has four pages and a contact form.</p>
+                <p>I made this four-page portfolio website with HTML5 and CSS3.</p>
             </article>
-            <article>
+            <article class="project-card">
                 <h2>Minecraft Inventory Mod</h2>
-                <p>I made a Minecraft mod to make inventory management easier. It repeats clicks while the mouse button is held down.</p>
+                <p>I made a Minecraft mod that repeats inventory clicks while the mouse button is held down.</p>
             </article>
+            <div class="clear"></div>
         </section>
     </main>
 
-    <!-- my email and copyright at the bottom -->
     <footer class="site-footer">
         <div class="page-width">
-            <p>Email me: kieron.edwards@ontariotechu.net</p>
-            <p>© 2026 Kieron Edwards</p>
+            <p>Email me: <span class="placeholder-note">kieron.edwards@ontariotechu.net</span></p>
+            <p>© 2026 <span class="placeholder-note">Kieron Edwards</span></p>
         </div>
     </footer>
 </body>

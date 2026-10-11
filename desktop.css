@@ -1,9 +1,9 @@
-/* desktop size */
 .page-width {
     width: 88%;
 }
 
-.photo-wrapper {
-    width: 40%;
+.project-card {
+    width: 45%;
+    margin: 1%;
+    padding: 1.5%;
 }
-

@@ -1,13 +1,27 @@
-/* phone size, with a bit more room at the sides */
+body {
+    font-size: 16px;
+}
+
 .page-width {
     width: 94%;
 }
 
 .nav-list li {
-    margin-right: 10px;
+    display: inline-block;
+    margin: 4px 10px 4px 0;
 }
 
-.photo-wrapper {
-    width: 80%;
+.intro-panel,
+.content-panel,
+.home-links {
+    padding: 16px;
 }
 
+.project-card {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 0;
+    margin: 12px 0;
+    padding: 14px;
+    float: none;
+}

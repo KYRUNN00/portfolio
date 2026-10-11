@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
-    <!-- helps it fit on phones too -->
+    <!-- makes the page fit the phone or computer screen -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Me | Kieron's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- the screen size picks the css file -->
+    <!-- only one of these screen size file used at one tiem -->
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
     <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 601px) and (max-width: 900px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 901px)">
 </head>
+
+
+
 <body>
-    <!-- name and links for the other pages -->
+    <!-- site name and links to the other pages and stuff -->
     <header class="site-header">
         <div class="page-width">
             <p class="site-name">Kieron's Portfolio</p>
-            <nav>
+            <nav aria-label="Main navigation">
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html" aria-current="page">About Me</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -27,22 +32,23 @@
         </div>
     </header>
 
-    <!-- bit about me, plus my photo and video -->
+
+    <!-- intro, photo, and video -->
     <main class="page-width">
         <article>
             <h1>About Me</h1>
-
             <p>Hey! My name is Kieron Edwards. I'm 18 years old and I'm studying Cybersecurity and Networking at Ontario Tech University.</p>
             <p>I love making different projects and posting my work here!</p>
 
-            <!-- my photo is in the images folder -->
-            <div class="photo-wrapper">
-                <img src="images/profile.jpeg" alt="Profile photo">
-            </div>
 
-            <section>
-                <h2>A quick video intro</h2>
-                <!-- controls are for playing and pausing -->
+            <figure>
+                <!-- photo is inside images folder -->
+                <img class="profile-photo" src="images/profile.jpeg" alt="Profile photo">
+            </figure>
+
+            <section aria-labelledby="video-heading">
+                <h2 id="video-heading">A quick video intro</h2>
+                <!-- controls let people play and pause the video -->
                 <video class="intro-video" controls poster="images/profile.jpeg">
                     <source src="videos/introduction.mp4" type="video/mp4">
                 </video>
@@ -50,12 +56,16 @@
         </article>
     </main>
 
-    <!-- my email and copyright at the bottom -->
+
+    <!-- contacts -->
     <footer class="site-footer">
         <div class="page-width">
             <p>Email me: kieron.edwards@ontariotechu.net</p>
             <p>© 2026 Kieron Edwards</p>
         </div>
     </footer>
+
+
+
 </body>
 </html>
