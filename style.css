@@ -1,0 +1,83 @@
+/* basic stuff for all the pages */
+body {
+    margin: 0;
+    background-color: white;
+    color: #0b1926;
+    font-family: Arial, sans-serif;
+}
+
+/* leaves some room at the sides */
+.page-width {
+    margin: auto;
+}
+
+/* the header gradient goes top to bottom */
+.site-header {
+    padding: 18px 0;
+    background: linear-gradient(#0b1926, #3e5951);
+    color: white;
+}
+
+.site-name {
+    margin: 0 0 8px;
+    color: #ef41f2;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* puts the links beside each other */
+.nav-list li {
+    display: inline;
+    margin-right: 18px;
+}
+
+.nav-list a {
+    color: white;
+}
+
+/* room around the page content */
+main {
+    padding: 24px 0;
+}
+
+/* photo gets smaller with the page */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* video does too */
+.intro-video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* labels go on their own line */
+.contact-form label {
+    display: block;
+}
+
+/* fields fill the form width */
+.contact-form input,
+.contact-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #736f6c;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+/* angled gradient for the assignment */
+.site-footer {
+    padding: 14px 0;
+    background: linear-gradient(135deg, #0b1926, #3e5951);
+    color: white;
+}

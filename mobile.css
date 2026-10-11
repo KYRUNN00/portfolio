@@ -1,0 +1,9 @@
+/* phone size, with a bit more room at the sides */
+.page-width {
+    width: 94%;
+}
+
+.nav-list li {
+    margin-right: 10px;
+}
+

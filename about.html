@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- helps it fit on phones too -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me | Kieron's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- the screen size picks the css file -->
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 601px) and (max-width: 900px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 901px)">
+</head>
+<body>
+    <!-- name and links for the other pages -->
+    <header class="site-header">
+        <div class="page-width">
+            <p class="site-name">Kieron's Portfolio</p>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- bit about me, plus my photo and video -->
+    <main class="page-width">
+        <article>
+            <h1>About Me</h1>
+
+            <p>Hey! My name is Kieron Edwards. I'm 18 years old and I'm studying Cybersecurity and Networking at Ontario Tech University.</p>
+            <p>I love making different projects and posting my work here!</p>
+
+            <!-- my photo is in the images folder -->
+            <img src="images/profile.jpeg" alt="Profile photo">
+
+            <section>
+                <h2>A quick video intro</h2>
+                <!-- controls are for playing and pausing -->
+                <video class="intro-video" controls poster="images/profile.jpeg">
+                    <source src="videos/introduction.mp4" type="video/mp4">
+                </video>
+            </section>
+        </article>
+    </main>
+
+    <!-- my email and copyright at the bottom -->
+    <footer class="site-footer">
+        <div class="page-width">
+            <p>Email me: kieron.edwards@ontariotechu.net</p>
+            <p>© 2026 Kieron Edwards</p>
+        </div>
+    </footer>
+</body>
+</html>
